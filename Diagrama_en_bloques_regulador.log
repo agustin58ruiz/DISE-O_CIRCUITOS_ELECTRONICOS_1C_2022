@@ -1,26 +1,62 @@
 Circuit: * C:\Users\Agust\Documents\Facultad\Diseño de Circuitos Electronicos\DISE-O_CIRCUITOS_ELECTRONICOS_1C_2022\Diagrama_en_bloques_regulador.asc
 
-Direct Newton iteration for .op point succeeded.
-.step rload=10
-.step rload=510
-.step rload=1010
-.step rload=1510
-.step rload=2000
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+vernier = 0.5
+vernier = 0.666667
+Gmin = 5.34392e-005
+vernier = 0.888888
+vernier = 1
+Gmin = 7.53781e-006
+Gmin = 8.09366e-007
+Gmin = 8.6905e-008
+Gmin = 9.33136e-009
+Gmin = 1.00195e-009
+Gmin = 1.07583e-010
+Gmin = 1.15517e-011
+Gmin = 1.24035e-012
+Gmin = 1.33182e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
 
-Date: Mon Apr 11 18:07:14 2022
-Total elapsed time: 0.466 seconds.
+Semiconductor Device Operating Points:
+                        --- Bipolar Transistors ---
+Name:       q4          q3          q2          q1
+Model:    bc558b      bc558b      bc548b      bc548b
+Ib:      -1.68e-06   -1.65e-06    1.80e-06    1.78e-06
+Ic:      -4.98e-04   -4.99e-04    4.99e-04    5.02e-04
+Vbe:     -6.96e-01   -6.96e-01    6.45e-01    6.45e-01
+Vbc:      0.00e+00    1.07e+00   -2.63e+00   -3.70e+00
+Vce:     -6.96e-01   -1.76e+00    3.28e+00    4.35e+00
+BetaDC:   2.97e+02    3.03e+02    2.78e+02    2.82e+02
+Gm:       1.91e-02    1.92e-02    1.92e-02    1.93e-02
+Rpi:      1.56e+04    1.59e+04    1.61e+04    1.62e+04
+Rx:       0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Ro:       1.05e+05    1.07e+05    1.31e+05    1.33e+05
+Cbe:      7.20e-11    7.20e-11    4.56e-11    4.57e-11
+Cbc:      9.81e-12    6.67e-12    3.05e-12    2.78e-12
+Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00
+BetaAC:   2.98e+02    3.04e+02    3.08e+02    3.13e+02
+Cbx:      0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Ft:       3.72e+07    3.88e+07    6.27e+07    6.34e+07
 
-tnom = 27
-temp = 27
-method = modified trap
-totiter = 2049
-traniter = 2034
-tranpoints = 1018
-accept = 1018
-rejected = 0
-matrix size = 14
-fillins = 4
-solver = Normal
-Matrix Compiler1: 778 bytes object code size  0.4/0.3/[0.1]
-Matrix Compiler2: off  [0.1]/0.3/0.2
+                        --- VDMOSFET Transistors ---
+Name:          m1
+Model:      hat1072h
+Id:         -3.32e-01
+Vgs:        -2.02e+00
+Vds:        -2.98e+00
+Vth:        -2.00e+00
+Gm:          4.63e+00
+Gds:         9.14e-03
+Cgs:         4.30e-09
+Cgd:         1.65e-09
+Cbody:       1.50e-09
+
 
