@@ -1,0 +1,23 @@
+* C:\Users\Agust\Documents\Facultad\Diseño de Circuitos Electronicos\DISE-O_CIRCUITOS_ELECTRONICOS_1C_2022\Diagrama_en_bloques_regulador.asc
+E§a 0 Va Vref vf 1000
+Vref Vref 0 1.65
+Rin Vref vf 100k
+RL Vo 0 {RLOAD}
+R1 vf 0 100k
+R3 Vo vf 200k
+M1 Vo Va N002 N002 HAT1072H
+VREG P001 0 6.3
+V1 N002 P001 0
+C2 0 Vo 5µ
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\Agust\Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 0 1m 0 1u
+* Referencia
+* Realimentador
+* a
+* Transistor de paso
+* Carga
+.step param RLOAD 10 2k 500
+.backanno
+.end
