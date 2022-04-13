@@ -1,0 +1,42 @@
+Circuit: * C:\Users\Agustín\Documents\DCE\DISE-O_CIRCUITOS_ELECTRONICOS_1C_2022\Draft1.asc
+
+Direct Newton iteration for .op point succeeded.
+Semiconductor Device Operating Points:
+                        --- Bipolar Transistors ---
+Name:       q4          q3          q2          q1
+Model:    bc558b      bc558b      bc548b      bc548b
+Ib:      -7.96e-06   -2.25e-03   -3.73e-11    1.02e-05
+Ic:      -2.34e-03   -3.49e-11    3.49e-11    4.60e-03
+Vbe:     -7.37e-01   -7.87e-01   -2.31e+00    6.94e-01
+Vbc:      0.00e+00   -7.83e-01   -3.49e+01   -3.11e+01
+Vce:     -7.37e-01   -4.46e-03    3.26e+01    3.18e+01
+BetaDC:   2.94e+02    1.55e-08   -9.36e-01    4.51e+02
+Gm:       8.82e-02    7.29e-02    8.13e-52    1.72e-01
+Rpi:      3.27e+03    4.72e+02    1.00e+12    2.70e+03
+Rx:       0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Ro:       2.23e+04    2.21e+00    0.00e+00    2.04e+04
+Cbe:      1.16e-10    3.56e-10    3.61e-12    1.11e-10
+Cbc:      9.83e-12    5.47e-09    1.43e-12    1.48e-12
+Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00
+BetaAC:   2.88e+02    3.44e+01    8.13e-40    4.64e+02
+Cbx:      0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Ft:       1.11e+08    1.99e+06    3.16e-02    2.44e+08
+
+
+
+Date: Tue Apr 12 00:55:23 2022
+Total elapsed time: 0.144 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 18
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 13
+fillins = 6
+solver = Normal
+Matrix Compiler1: 1012 bytes object code size
+Matrix Compiler2: 1.14 KB object code size
