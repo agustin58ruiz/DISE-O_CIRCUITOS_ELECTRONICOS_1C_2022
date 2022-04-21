@@ -1,0 +1,67 @@
+Circuit: * C:\Users\santi\Documents\GitHub\DISE-O_CIRCUITOS_ELECTRONICOS_1C_2022\Diagrama_en_bloques_regulador_sumider_pmos_real.asc
+
+Direct Newton iteration for .op point succeeded.
+Semiconductor Device Operating Points:
+                        --- Diodes ---
+Name:    d:u1:4      d:u1:3      d:u1:2      d:u1:1
+Model:   u1:md3      u1:md2      u1:md1       u1:md
+Id:      5.80e+00    5.80e+00    2.56e-13   -9.93e-14
+Vd:      2.56e-01    2.56e-01    2.56e-01   -9.59e-02
+Req:     1.79e-03    1.79e-03    1.00e+12    1.00e+12
+CAP:     0.00e+00    0.00e+00    3.86e-10    4.45e-10
+
+                        --- Bipolar Transistors ---
+Name:       q4          q3          q5          q2          q1
+Model:    bc558b      bc558b      bc548b      bc548b      bc548b
+Ib:      -1.92e-12    3.96e-12    2.29e-03    6.25e-02   -6.39e-12
+Ic:      -8.12e-12   -1.49e-11    6.25e-02   -6.25e-02    6.08e-12
+Vbe:     -2.32e-01   -2.32e-01    7.87e-01    7.71e-01   -2.45e-01
+Vbc:      0.00e+00    5.88e+00    6.21e-01    8.32e-01   -6.06e+00
+Vce:     -2.32e-01   -6.11e+00    1.66e-01   -6.10e-02    5.81e+00
+BetaDC:   4.23e+00   -3.77e+00    2.73e+01   -9.99e-01   -9.51e-01
+Gm:       3.14e-10    3.49e-10    1.77e+00   -3.72e-03    2.32e-17
+Rpi:      2.59e+10    2.59e+10    8.16e+01    1.49e+02    9.96e+11
+Rx:       0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Ro:       5.14e+12    6.44e+12    2.24e+01    6.22e-01    1.15e+20
+Cbe:      3.69e-11    3.69e-11    1.36e-09    6.67e-10    8.80e-12
+Cbc:      9.81e-12    4.18e-12    7.69e-10    2.41e-08    2.43e-12
+Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+BetaAC:   8.12e+00    9.03e+00    1.45e+02   -5.56e-01    2.31e-05
+Cbx:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Ft:       1.06e+00    1.34e+00    1.33e+08    3.57e+04    1.42e-02
+
+                        --- VDMOSFET Transistors ---
+Name:          m2
+Model:      hat1072h
+Id:          6.96e-10
+Vgs:         4.97e+00
+Vds:        -8.80e-03
+Vth:        -2.00e+00
+Gm:          0.00e+00
+Gds:         0.00e+00
+Cgs:         4.30e-09
+Cgd:         7.85e-10
+Cbody:       2.99e-09
+
+                        --- MOSFET Transistors ---
+Name:        m:u1:1
+Model:        u1:mm
+Id:         -2.02e-01
+Vgs:        -6.07e+00
+Vds:        -2.19e-02
+Vbs:         0.00e+00
+Vth:        -3.41e+00
+Vdsat:      -2.66e+00
+Gm:          7.62e-02
+Gds:         9.17e+00
+Gmb:         0.00e+00
+Cbd:         0.00e+00
+Cbs:         0.00e+00
+Cgsov:       3.45e-10
+Cgdov:       1.00e-15
+Cgbov:       0.00e+00
+Cgs:         0.00e+00
+Cgd:         0.00e+00
+Cgb:         0.00e+00
+
+
