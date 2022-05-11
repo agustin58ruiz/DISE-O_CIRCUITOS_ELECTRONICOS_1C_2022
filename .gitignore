@@ -1,11 +1,3 @@
-Diagrama_en_bloques_regulador.log
-Diagrama_en_bloques_regulador.raw
-Draft1.log
-Draft1.raw
-ReguladorTension-1ite.log
-ReguladorTension-1ite.net
-ReguladorTension-1ite.raw
-Diagrama_en_bloques_regulador_sumidero.raw
-Diagrama_en_bloques_regulador_sumidero.log
-Diagrama_en_bloques_regulador_sumider.log
-Diagrama_en_bloques_regulador_sumider.raw
+*.raw
+*.log
+*.net
