@@ -1,6 +1,7 @@
 Version 4
 SymbolType BLOCK
 RECTANGLE Normal -80 -88 96 88
+TEXT 27 74 Left 2 LDOB
 WINDOW 0 8 -88 Bottom 2
 PIN -80 -64 LEFT 8
 PINATTR PinName ENLDOB
