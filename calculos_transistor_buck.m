@@ -3,12 +3,12 @@ close all;
 fsw = 200e3 % Hz
 Id = 10e-3:1e-3:1.6; % A
 Vds = 36 % V
-D = .5
+Vdrv = Vds % V
+Vo = 6.35
+D = Vo/Vds
 
 % IRF9520
-
 Rdson = 0.6 % Ohm
-Vdrv = 6.3 % V
 Qgate = 6.89855e-008 % C
 Vth = 4
 tsw = 24e-9 % s
@@ -16,16 +16,16 @@ tsw = 24e-9 % s
 
 
 
-Pgate = fsw * Qgate * Vdrv;
-Pcond = Id.^2 * Rdson * D;
-Psw = 0.5 * Vds * Id * fsw * tsw;
+Pgate = 2 * fsw * Qgate * Vdrv;
+Pcond = Id.^2 * Rdson * D + Id.^2 * Rdson * 1-D;
+Psw = 2 * 0.5 * Vds * Id * fsw * tsw;
 
 %Ploss = Pcond + Psw .+ Pgate % Octave
 Ploss = Pcond + Psw + Pgate; % Matlab
 figure()
 plot(Id, Ploss)
 
-eff = 1- Ploss./(Vds*Id);
+eff = (Vds*Id)./(Ploss+(Vds*Id));
 
 figure()
 plot(Id, eff)
