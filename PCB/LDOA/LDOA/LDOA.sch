@@ -1,0 +1,378 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R7
+U 1 1 62A11331
+P 3750 2250
+F 0 "R7" H 3820 2296 50  0000 L CNN
+F 1 "R" H 3820 2205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3680 2250 50  0001 C CNN
+F 3 "~" H 3750 2250 50  0001 C CNN
+	1    3750 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 62A12089
+P 2950 4150
+F 0 "R4" V 2743 4150 50  0000 C CNN
+F 1 "R" V 2834 4150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2880 4150 50  0001 C CNN
+F 3 "~" H 2950 4150 50  0001 C CNN
+	1    2950 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 62A12A85
+P 3450 4150
+F 0 "R6" V 3243 4150 50  0000 C CNN
+F 1 "R" V 3334 4150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3380 4150 50  0001 C CNN
+F 3 "~" H 3450 4150 50  0001 C CNN
+	1    3450 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q2
+U 1 1 62A1485C
+P 2550 3750
+F 0 "Q2" H 2741 3796 50  0000 L CNN
+F 1 "BC547" H 2741 3705 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2750 3675 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 2550 3750 50  0001 L CNN
+	1    2550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q6
+U 1 1 62A154B3
+P 3850 3750
+F 0 "Q6" H 4041 3796 50  0000 L CNN
+F 1 "BC547" H 4041 3705 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4050 3675 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 3850 3750 50  0001 L CNN
+	1    3850 3750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3950 2650 4150
+Wire Wire Line
+	2650 4150 2800 4150
+Wire Wire Line
+	3600 4150 3750 4150
+Wire Wire Line
+	3750 4150 3750 3950
+$Comp
+L Transistor_BJT:BC557 Q3
+U 1 1 62A1C40B
+P 2750 2850
+F 0 "Q3" H 2941 2804 50  0000 L CNN
+F 1 "BC557" H 2941 2895 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2950 2775 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf" H 2750 2850 50  0001 L CNN
+	1    2750 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC557 Q5
+U 1 1 62A1D532
+P 3650 2850
+F 0 "Q5" H 3841 2804 50  0000 L CNN
+F 1 "BC557" H 3841 2895 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3850 2775 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf" H 3650 2850 50  0001 L CNN
+	1    3650 2850
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3750 2400 3750 2650
+Wire Wire Line
+	2650 2100 2650 1750
+Wire Wire Line
+	3750 1750 3750 2100
+Wire Wire Line
+	2950 2850 3000 2850
+Wire Wire Line
+	3000 2850 3000 3200
+Wire Wire Line
+	3000 3200 2650 3200
+Wire Wire Line
+	2650 3200 2650 3550
+Connection ~ 3000 2850
+Wire Wire Line
+	2650 3200 2650 3050
+Connection ~ 2650 3200
+Wire Wire Line
+	3750 3050 3750 3200
+Wire Wire Line
+	2650 2400 2650 2650
+$Comp
+L Device:R R3
+U 1 1 62A10B99
+P 2650 2250
+F 0 "R3" H 2720 2296 50  0000 L CNN
+F 1 "R" H 2720 2205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2580 2250 50  0001 C CNN
+F 3 "~" H 2650 2250 50  0001 C CNN
+	1    2650 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q4
+U 1 1 62A203EC
+P 3100 4600
+F 0 "Q4" H 3291 4646 50  0000 L CNN
+F 1 "BC547" H 3291 4555 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3300 4525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 3100 4600 50  0001 L CNN
+	1    3100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 62A20E25
+P 3200 5150
+F 0 "R5" H 3130 5104 50  0000 R CNN
+F 1 "R" H 3130 5195 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3130 5150 50  0001 C CNN
+F 3 "~" H 3200 5150 50  0001 C CNN
+	1    3200 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3200 4400 3200 4150
+Connection ~ 3200 4150
+Wire Wire Line
+	2650 1750 3750 1750
+Wire Wire Line
+	3000 2850 3450 2850
+Wire Wire Line
+	3200 4150 3300 4150
+Wire Wire Line
+	3100 4150 3200 4150
+$Comp
+L Device:R R2
+U 1 1 62A248CA
+P 1950 5150
+F 0 "R2" H 1880 5104 50  0000 R CNN
+F 1 "R" H 1880 5195 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1880 5150 50  0001 C CNN
+F 3 "~" H 1950 5150 50  0001 C CNN
+	1    1950 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1950 5300 1950 5650
+Wire Wire Line
+	3200 5650 3200 5300
+$Comp
+L Transistor_BJT:BC547 Q1
+U 1 1 62A25263
+P 2050 4600
+F 0 "Q1" H 2241 4646 50  0000 L CNN
+F 1 "BC547" H 2241 4555 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2250 4525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 2050 4600 50  0001 L CNN
+	1    2050 4600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4800 1950 5000
+Wire Wire Line
+	2250 4600 2300 4600
+Wire Wire Line
+	2300 4600 2300 4350
+Wire Wire Line
+	2300 4350 1950 4350
+Wire Wire Line
+	1950 4350 1950 4400
+Connection ~ 2300 4600
+Wire Wire Line
+	2300 4600 2900 4600
+Wire Wire Line
+	1950 5650 3200 5650
+Wire Wire Line
+	1950 4350 1950 3200
+Wire Wire Line
+	1950 1750 2650 1750
+Connection ~ 1950 4350
+Connection ~ 2650 1750
+$Comp
+L Device:R R1
+U 1 1 62A2A3E7
+P 1950 3050
+F 0 "R1" H 2020 3096 50  0000 L CNN
+F 1 "R" H 2020 3005 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1880 3050 50  0001 C CNN
+F 3 "~" H 1950 3050 50  0001 C CNN
+	1    1950 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2900 1950 1750
+$Comp
+L IRF9520:IRF9520 Q8
+U 1 1 62A2B696
+P 5700 3300
+F 0 "Q8" H 5798 3346 50  0000 L CNN
+F 1 "IRF9520" H 5798 3255 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5700 3300 50  0001 L BNN
+F 3 "" H 5700 3300 50  0001 L BNN
+F 4 "IPC 7351B" H 5700 3300 50  0001 L BNN "STANDARD"
+F 5 "B" H 5700 3300 50  0001 L BNN "PARTREV"
+F 6 "VISHAY" H 5700 3300 50  0001 L BNN "MANUFACTURER"
+	1    5700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 62A2F936
+P 5400 3650
+F 0 "C1" V 5148 3650 50  0000 C CNN
+F 1 "C" V 5239 3650 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D17.0mm_P7.50mm" H 5438 3500 50  0001 C CNN
+F 3 "~" H 5400 3650 50  0001 C CNN
+	1    5400 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 3650 5700 3650
+Wire Wire Line
+	5700 3650 5700 3500
+Connection ~ 3750 3200
+Wire Wire Line
+	3750 3200 3750 3550
+Wire Wire Line
+	3750 3200 5050 3200
+Wire Wire Line
+	5250 3650 5050 3650
+Wire Wire Line
+	5050 3650 5050 3200
+Connection ~ 5050 3200
+Wire Wire Line
+	5050 3200 5500 3200
+$Comp
+L Device:R R11
+U 1 1 62A333B5
+P 5700 3900
+F 0 "R11" H 5630 3854 50  0000 R CNN
+F 1 "R" H 5630 3945 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5630 3900 50  0001 C CNN
+F 3 "~" H 5700 3900 50  0001 C CNN
+	1    5700 3900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 3650 5700 3750
+Connection ~ 5700 3650
+Wire Wire Line
+	5700 3100 5700 1750
+Wire Wire Line
+	5700 1750 3750 1750
+Connection ~ 3750 1750
+Text GLabel 5700 4300 3    50   Input ~ 0
+VA
+$Comp
+L Device:R R8
+U 1 1 62A368B2
+P 4350 4450
+F 0 "R8" H 4420 4496 50  0000 L CNN
+F 1 "R" H 4420 4405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4280 4450 50  0001 C CNN
+F 3 "~" H 4350 4450 50  0001 C CNN
+	1    4350 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 62A3756D
+P 4350 4850
+F 0 "R9" H 4420 4896 50  0000 L CNN
+F 1 "R" H 4420 4805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4280 4850 50  0001 C CNN
+F 3 "~" H 4350 4850 50  0001 C CNN
+	1    4350 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 62A37995
+P 4350 5350
+F 0 "R10" H 4420 5396 50  0000 L CNN
+F 1 "R" H 4420 5305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4280 5350 50  0001 C CNN
+F 3 "~" H 4350 5350 50  0001 C CNN
+	1    4350 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q7
+U 1 1 62A382B7
+P 5100 5400
+F 0 "Q7" H 5305 5446 50  0000 L CNN
+F 1 "2N7000" H 5305 5355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5300 5325 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5100 5400 50  0001 L CNN
+	1    5100 5400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 5200 5000 5100
+Wire Wire Line
+	5000 5100 4350 5100
+Wire Wire Line
+	5000 5600 5000 5650
+Wire Wire Line
+	5000 5650 4350 5650
+Wire Wire Line
+	4350 5650 4350 5500
+Wire Wire Line
+	4350 4700 4350 4650
+Wire Wire Line
+	5700 4050 5700 4150
+Wire Wire Line
+	4350 5100 4350 5200
+Wire Wire Line
+	4350 5000 4350 5100
+Connection ~ 4350 5100
+Wire Wire Line
+	4350 4150 5700 4150
+Wire Wire Line
+	4350 4150 4350 4300
+Connection ~ 5700 4150
+Wire Wire Line
+	5700 4150 5700 4300
+Wire Wire Line
+	4350 4650 4050 4650
+Connection ~ 4350 4650
+Wire Wire Line
+	4350 4650 4350 4600
+Text GLabel 4050 4650 0    50   BiDi ~ 0
+Vf
+Connection ~ 3200 5650
+Connection ~ 4350 5650
+Wire Wire Line
+	3200 4800 3200 5000
+Wire Wire Line
+	4350 5650 3200 5650
+Text GLabel 2350 3750 0    50   BiDi ~ 0
+Vf
+Text GLabel 4050 3750 2    50   BiDi ~ 0
+Vref
+Text GLabel 5300 5400 2    50   Input ~ 0
+SELA
+$EndSCHEMATC
