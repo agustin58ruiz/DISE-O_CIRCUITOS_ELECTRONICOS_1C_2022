@@ -832,12 +832,12 @@ Connection ~ 1300 3700
 Wire Wire Line
 	1300 3700 1350 3700
 $Comp
-L Amplifier_Operational:TL081 U?
+L Amplifier_Operational:TL081 U1
 U 1 1 62A878D4
 P 6000 3750
-F 0 "U?" H 6344 3796 50  0000 L CNN
+F 0 "U1" H 6344 3796 50  0000 L CNN
 F 1 "TL081" H 6344 3705 50  0000 L CNN
-F 2 "" H 6050 3800 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6050 3800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 6150 3900 50  0001 C CNN
 	1    6000 3750
 	1    0    0    -1  
@@ -847,12 +847,12 @@ VREG
 Text Label 5900 4050 0    50   ~ 0
 V-
 $Comp
-L Amplifier_Operational:TL081 U?
+L Amplifier_Operational:TL081 U3
 U 1 1 62A8B621
 P 9350 3350
-F 0 "U?" H 9694 3304 50  0000 L CNN
+F 0 "U3" H 9694 3304 50  0000 L CNN
 F 1 "TL081" H 9694 3395 50  0000 L CNN
-F 2 "" H 9400 3400 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 9400 3400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 9500 3500 50  0001 C CNN
 	1    9350 3350
 	1    0    0    1   
@@ -863,12 +863,12 @@ VREG
 Text Label 9250 3050 0    50   ~ 0
 V-
 $Comp
-L Amplifier_Operational:TL081 U?
+L Amplifier_Operational:TL081 U2
 U 1 1 62A94557
 P 7800 1200
-F 0 "U?" H 8144 1154 50  0000 L CNN
+F 0 "U2" H 8144 1154 50  0000 L CNN
 F 1 "TL081" H 8144 1245 50  0000 L CNN
-F 2 "" H 7850 1250 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 7850 1250 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7950 1350 50  0001 C CNN
 	1    7800 1200
 	1    0    0    1   
