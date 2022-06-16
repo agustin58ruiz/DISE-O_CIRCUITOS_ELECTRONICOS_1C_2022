@@ -62,13 +62,13 @@ C1 cdelayed Vss {Cdelay}; RC delay model
 *    this signal is typically connected to the input of a gate driver
 ***********************************************************************
 .subckt PWM vc c
-A1 reset clk 0 0 0 c 0 0 SRFLOP Vhigh=5
+A1 reset clk 0 0 0 c 0 0 SRFLOP Vhigh=7
 XU1 sawtooth vc Vdd5V 0 comp_out LTC6752
-V3 Vdd5V 0 5
-Vclk clk 0 PULSE(0 5 0 1n 1n {Dmin/fs} {1/fs})
+V3 Vdd5V 0 7
+Vclk clk 0 PULSE(0 7 0 1n 1n {Dmin/fs} {1/fs})
 Vsawtooth sawtooth 0 PULSE({Voffset} {Voffset+VM} 0 {0.99/fs} {(0.01)/fs} 0 {1/fs})
-A2 comp_out clk_dmax 0 0 0 0 reset 0 OR Vhigh=5
-Vclk_Dmax clk_dmax 0 PULSE(0 5 {Dmax/fs} 1n 1n {(1-Dmax)/fs} {1/fs})
+A2 comp_out clk_dmax 0 0 0 0 reset 0 OR Vhigh=7
+Vclk_Dmax clk_dmax 0 PULSE(0 7 {Dmax/fs} 1n 1n {(1-Dmax)/fs} {1/fs})
 .param Dmin=0
 .param Dmax=0.9
 .param fs=100kHz
