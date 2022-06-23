@@ -15,4 +15,16 @@ ILmax = Is + 1/2/f * (1-D) * Vs / L % H
 ILmin = ILmax - Vs* (1-D) /f / L
 C = (ILmax - ILmin)/(16 * ripple_max_V * Vs * f)
 
+% Boost
 
+Vs=18
+Ve=12*1.1
+Vsat=0.5
+Vd=0.4
+f=50e3
+Ilmax=1.66
+A=(Vs+Vd)/(Ve-Vsat)-1
+D=A/(1+A)
+
+
+Lc=Ve*D/f/Ilmax
