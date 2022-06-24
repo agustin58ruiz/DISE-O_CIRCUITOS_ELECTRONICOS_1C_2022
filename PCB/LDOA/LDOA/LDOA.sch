@@ -244,7 +244,7 @@ U 1 1 62A2F936
 P 4350 3600
 F 0 "C1" V 4098 3600 50  0000 C CNN
 F 1 "C" V 4189 3600 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D17.0mm_P7.50mm" H 4388 3450 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4388 3450 50  0001 C CNN
 F 3 "~" H 4350 3600 50  0001 C CNN
 	1    4350 3600
 	0    1    1    0   
@@ -671,7 +671,7 @@ U 1 1 62AF2565
 P 9650 2550
 F 0 "C2" V 9398 2550 50  0000 C CNN
 F 1 "C" V 9489 2550 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D17.0mm_P7.50mm" H 9688 2400 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 9688 2400 50  0001 C CNN
 F 3 "~" H 9650 2550 50  0001 C CNN
 	1    9650 2550
 	-1   0    0    1   
@@ -831,28 +831,17 @@ Sensado de corriente\n
 Connection ~ 1300 3700
 Wire Wire Line
 	1300 3700 1350 3700
-$Comp
-L Amplifier_Operational:TL081 U?
-U 1 1 62A878D4
-P 6000 3750
-F 0 "U?" H 6344 3796 50  0000 L CNN
-F 1 "TL081" H 6344 3705 50  0000 L CNN
-F 2 "" H 6050 3800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 6150 3900 50  0001 C CNN
-	1    6000 3750
-	1    0    0    -1  
-$EndComp
 Text Label 5900 3450 0    50   ~ 0
 VREG
 Text Label 5900 4050 0    50   ~ 0
 V-
 $Comp
-L Amplifier_Operational:TL081 U?
+L Amplifier_Operational:TL081 U3
 U 1 1 62A8B621
 P 9350 3350
-F 0 "U?" H 9694 3304 50  0000 L CNN
+F 0 "U3" H 9694 3304 50  0000 L CNN
 F 1 "TL081" H 9694 3395 50  0000 L CNN
-F 2 "" H 9400 3400 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 9400 3400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 9500 3500 50  0001 C CNN
 	1    9350 3350
 	1    0    0    1   
@@ -863,12 +852,12 @@ VREG
 Text Label 9250 3050 0    50   ~ 0
 V-
 $Comp
-L Amplifier_Operational:TL081 U?
+L Amplifier_Operational:TL081 U2
 U 1 1 62A94557
 P 7800 1200
-F 0 "U?" H 8144 1154 50  0000 L CNN
+F 0 "U2" H 8144 1154 50  0000 L CNN
 F 1 "TL081" H 8144 1245 50  0000 L CNN
-F 2 "" H 7850 1250 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 7850 1250 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7950 1350 50  0001 C CNN
 	1    7800 1200
 	1    0    0    1   
@@ -899,4 +888,15 @@ Wire Notes Line
 	2600 4350 3050 4350
 Text Notes 2700 5700 0    50   ~ 0
 Realimentador\n
+$Comp
+L Amplifier_Operational:TL081 U1
+U 1 1 62A878D4
+P 6000 3750
+F 0 "U1" H 6344 3796 50  0000 L CNN
+F 1 "TL081" H 6344 3705 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6050 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 6150 3900 50  0001 C CNN
+	1    6000 3750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
