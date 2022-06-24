@@ -2,3 +2,5 @@
 *.log
 *.net
 *.ini
+sim_buck_datos/buck_driver.txt
+sim_buck_datos/corrientes.fig
