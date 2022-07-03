@@ -15,13 +15,10 @@ function Kg = computeKg(rho, L, Imax, Bmax, R, Ku)
 % (1e8*rho*L^2*Imax^2)/(Bmax^2*R*Ku)
 % Inputs:
 %   rho  : resistivity of wire in ohm*cm
-%   L    : inductance in henry
-%   Imax : max current through the inductor in ampere
-%   Bmax : max flux density of the core in tesla
-%   R    : resistance of the wire in ohm
-%   Ku   : fill factor of the wire (0, 1)
-% Outputs:
-%   Kg   : core geometric constant in cm^5
+%   L    : inductance in Henry
+%   Imax : max current through the inductor
+%   Bmax : max flux density of the core
+%   R    : resistance of the wire
     aux = rho.*L.*L.*Imax.*Imax;
     Kg= 1e8*aux./(Bmax.*Bmax.*R.*R.*Ku);
 end 
