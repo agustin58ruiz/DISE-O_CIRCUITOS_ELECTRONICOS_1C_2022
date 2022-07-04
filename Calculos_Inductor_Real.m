@@ -2,13 +2,25 @@ clear all; close all; clc;
 
 AreaCore =15 ; % En mm2
 AreaWindow = 15; % In mm2
-MeanLengthTurn = 50;
+MeanLengthTurn = 5; % in cm
 Resistivity = 1.72e-8;% Ohm x meter
 N = 15; % Wire turns
-Bmax = 15; %Magnetic Flux Density in Tesla
-Mu_0 = 4*pi*e-7; % Magnetic Permeability of free space
-R_gap = 456; % Gap reluctance
+Bsat = 15; % Saturation Magnetic Flux Density in Tesla
+alpha = 0.6; % alpha = Bmax / Bsat 
+Bmax = alpha * Bsat;
+Imax = 1.6; % Max current in ampere
+L = 65.3e-6; % Inductance in henry
+Ku = 0.6; % Utilization factor
+CopperResistance = 10; %Resistance of copper in ohm
 
+
+
+[Lg,n,Aw] = main(Resistivity, Imax, L, CopperResistance,...
+    Ku, Bmax,...
+    AreaCore, AreaWindow, MeanLengthTurn);
+fprintf("%s: %f\n","Core Gap Length in cm", Lg*100)
+fprintf("%s: %f\n","Number of turns", n)
+fprintf("%s: %f\n","Area wire in cm^2", Aw)
 
 function Kg = computeKg(rho, L, Imax, Bmax, R, Ku)
 % computeKg computes the core geometric constant Kg =
@@ -66,15 +78,30 @@ function wireArea = computeWireArea(Ku, Wa, n)
     wireArea = Ku.*Wa./n;
 end
 
-function main(rho, Imax, L, R, Ku, Bmax, Ac, Wa, MLT)
+function [Lg,n,Aw]= main(rho, Imax, L, R, Ku, Bmax, Ac, Wa, MLT)
 % Inputs: 
-%   rho   :
-%   Imax  :
-%   L     :
-%   R     :
-%   Ku    :
-%   Bsat  :
-%   Ac    :
-%   Wa    :
-%   MLT   :
+%   rho   : resistivity of wire in ohm*cm
+%   Imax  : max current through the inductor in ampere
+%   L     : inductance in henry
+%   R     : resistance of the wire in ohm
+%   Ku    : fill factor of the wire (0, 1)
+%   Bmax  : Max magnetic flux density in tesla
+%   Ac    : Area core in cm^2
+%   Wa    : Windows Area in cm^2
+%   MLT   : Mean Length Turn in cm
+% Outputs:
+%   Lg    : gap length in m
+%   n     : turns
+%   Aw    : Area Wire in cm^2
+    Kg_min = computeKg(rho, L, Imax, Bmax, R, Ku);
+    Kg = Ac.*Ac.*Wa./MLT;
+    if Kg < Kg_min
+      exception = MException("AcctError:NoClient",...
+          "main:Core doesn't comply specifications. Try increasing Kg=Ac^2*Wa/MLT") ;
+      throw(exception);
+    end
+    Lg = computeLengthGap(L, Imax, Bmax, Ac);
+    n = computeNumberTurns(L, Imax, Bmax, Ac);
+    Aw = computeWireArea(Ku, Wa, n);
 end
+
