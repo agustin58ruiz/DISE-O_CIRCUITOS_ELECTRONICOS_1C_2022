@@ -1,17 +1,22 @@
+%% Diseño de circuitos - 1er cuatrimestre 2022 - TP Integrador
+%   Program for helping in inductor desing
+%   Author: Agustin Ruiz
+
+%% Main 
 clear all; close all; clc;
 
-AreaCore =15 ; % En mm2
-AreaWindow = 15; % In mm2
-MeanLengthTurn = 5; % in cm
-Resistivity = 1.72e-8;% Ohm x meter
-N = 15; % Wire turns
-Bsat = 15; % Saturation Magnetic Flux Density in Tesla
-alpha = 0.6; % alpha = Bmax / Bsat 
+% Variables: Set 
+AreaCore =1.14 ; % En cm2
+AreaWindow = 1.085; % In cm2
+MeanLengthTurn = 6.28; % in cm
+Resistivity = 1.724e-6;% Copper resistivity [ohm x cm]
+Bsat = 300e-3; % Saturation Magnetic Flux Density in Tesla
+alpha = 1; % alpha = Bmax / Bsat 
 Bmax = alpha * Bsat;
-Imax = 1; % Max current in ampere
-L = 50e-6; % Inductance in henry
-Ku = 0.6; % Utilization factor
-CopperResistance = 10; %Resistance of copper in ohm
+Imax = 1.6; % Max current in ampere
+L = 65.3e-6; % Inductance in henry
+Ku = 0.4; % Utilization factor
+CopperResistance = 0.1; %Resistance of copper in ohm
 
 
 
@@ -22,6 +27,7 @@ fprintf("%s: %f\n","Core Gap Length in cm", Lg*100)
 fprintf("%s: %f\n","Number of turns", n)
 fprintf("%s: %f\n","Area wire in cm^2", Aw)
 
+%%
 function Kg = computeKg(rho, L, Imax, Bmax, R, Ku)
 % computeKg computes the core geometric constant Kg =
 % (1e8*rho*L^2*Imax^2)/(Bmax^2*R*Ku)
