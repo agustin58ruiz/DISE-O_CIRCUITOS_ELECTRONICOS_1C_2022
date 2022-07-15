@@ -8,8 +8,8 @@ N = 15; % Wire turns
 Bsat = 15; % Saturation Magnetic Flux Density in Tesla
 alpha = 0.6; % alpha = Bmax / Bsat 
 Bmax = alpha * Bsat;
-Imax = 1.6; % Max current in ampere
-L = 65.3e-6; % Inductance in henry
+Imax = 1; % Max current in ampere
+L = 50e-6; % Inductance in henry
 Ku = 0.6; % Utilization factor
 CopperResistance = 10; %Resistance of copper in ohm
 
