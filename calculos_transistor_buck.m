@@ -3,7 +3,7 @@ close all;
 fsw = 200e3 % Hz
 Id = 10e-3:1e-3:1.6; % A
 Vds = 36 % V
-Vdrv = Vds % V
+Vdrv = 7 % V
 Vo = 6.35
 D = Vo/Vds
 
@@ -29,22 +29,22 @@ D = Vo/Vds
 % 
 % figure()
 % plot(Id, eff)
-Vdrv = 10
+Vdrv = 7
 % IRF520
-Rdson = 0.23 % Ohm
+Rdson = 0.27 % Ohm
 Qgate = 7.44063e-009 % C
 Vth = 2.9
 tsw = 16.5e-9 % s
 
 
-
+PL = 0.05*Id.^2;
 
 Pgate = 2 * fsw * Qgate * Vdrv;
-Pcond = Id.^2 * Rdson
+Pcond = Id.^2 * Rdson;
 Psw = 2 * 0.5 * Vds * Id * fsw * tsw;
 
 %Ploss = Pcond + Psw .+ Pgate % Octave
-Ploss = Pcond + Psw + Pgate; % Matlab
+Ploss = Pcond + Psw + Pgate + PL; % Matlab
 figure()
 plot(Id, Ploss)
 
@@ -52,3 +52,5 @@ eff = (Vds*Id)./(Ploss+(Vds*Id));
 
 figure()
 plot(Id, eff)
+xlabel("Carga [A]")
+ylabel("Eficiencia")
