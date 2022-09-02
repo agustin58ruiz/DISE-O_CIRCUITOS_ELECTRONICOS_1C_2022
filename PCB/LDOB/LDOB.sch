@@ -1,0 +1,902 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R7
+U 1 1 62A11331
+P 2700 2200
+F 0 "R7" H 2770 2246 50  0000 L CNN
+F 1 "R" H 2770 2155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2630 2200 50  0001 C CNN
+F 3 "~" H 2700 2200 50  0001 C CNN
+	1    2700 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 62A12089
+P 1900 4100
+F 0 "R4" V 1693 4100 50  0000 C CNN
+F 1 "R" V 1784 4100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1830 4100 50  0001 C CNN
+F 3 "~" H 1900 4100 50  0001 C CNN
+	1    1900 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 62A12A85
+P 2400 4100
+F 0 "R6" V 2193 4100 50  0000 C CNN
+F 1 "R" V 2284 4100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2330 4100 50  0001 C CNN
+F 3 "~" H 2400 4100 50  0001 C CNN
+	1    2400 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q2
+U 1 1 62A1485C
+P 1500 3700
+F 0 "Q2" H 1691 3746 50  0000 L CNN
+F 1 "BC547" H 1691 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1700 3625 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 1500 3700 50  0001 L CNN
+	1    1500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q6
+U 1 1 62A154B3
+P 2800 3700
+F 0 "Q6" H 2991 3746 50  0000 L CNN
+F 1 "BC547" H 2991 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3000 3625 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 2800 3700 50  0001 L CNN
+	1    2800 3700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3900 1600 4100
+Wire Wire Line
+	1600 4100 1750 4100
+Wire Wire Line
+	2550 4100 2700 4100
+Wire Wire Line
+	2700 4100 2700 3900
+$Comp
+L Transistor_BJT:BC557 Q3
+U 1 1 62A1C40B
+P 1700 2800
+F 0 "Q3" H 1891 2754 50  0000 L CNN
+F 1 "BC557" H 1891 2845 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1900 2725 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf" H 1700 2800 50  0001 L CNN
+	1    1700 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC557 Q5
+U 1 1 62A1D532
+P 2600 2800
+F 0 "Q5" H 2791 2754 50  0000 L CNN
+F 1 "BC557" H 2791 2845 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2800 2725 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf" H 2600 2800 50  0001 L CNN
+	1    2600 2800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2700 2350 2700 2600
+Wire Wire Line
+	1600 2050 1600 1700
+Wire Wire Line
+	2700 1700 2700 2050
+Wire Wire Line
+	1900 2800 1950 2800
+Wire Wire Line
+	1950 2800 1950 3150
+Wire Wire Line
+	1950 3150 1600 3150
+Wire Wire Line
+	1600 3150 1600 3500
+Connection ~ 1950 2800
+Wire Wire Line
+	1600 3150 1600 3000
+Connection ~ 1600 3150
+Wire Wire Line
+	2700 3000 2700 3150
+Wire Wire Line
+	1600 2350 1600 2600
+$Comp
+L Device:R R3
+U 1 1 62A10B99
+P 1600 2200
+F 0 "R3" H 1670 2246 50  0000 L CNN
+F 1 "R" H 1670 2155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1530 2200 50  0001 C CNN
+F 3 "~" H 1600 2200 50  0001 C CNN
+	1    1600 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q4
+U 1 1 62A203EC
+P 2050 4550
+F 0 "Q4" H 2241 4596 50  0000 L CNN
+F 1 "BC547" H 2241 4505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2250 4475 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 2050 4550 50  0001 L CNN
+	1    2050 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 62A20E25
+P 2150 5100
+F 0 "R5" H 2080 5054 50  0000 R CNN
+F 1 "R" H 2080 5145 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2080 5100 50  0001 C CNN
+F 3 "~" H 2150 5100 50  0001 C CNN
+	1    2150 5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 4350 2150 4100
+Connection ~ 2150 4100
+Wire Wire Line
+	1600 1700 2700 1700
+Wire Wire Line
+	1950 2800 2400 2800
+Wire Wire Line
+	2150 4100 2250 4100
+Wire Wire Line
+	2050 4100 2150 4100
+$Comp
+L Device:R R2
+U 1 1 62A248CA
+P 900 5100
+F 0 "R2" H 830 5054 50  0000 R CNN
+F 1 "R" H 830 5145 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 830 5100 50  0001 C CNN
+F 3 "~" H 900 5100 50  0001 C CNN
+	1    900  5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	900  5250 900  5600
+Wire Wire Line
+	2150 5600 2150 5250
+$Comp
+L Transistor_BJT:BC547 Q1
+U 1 1 62A25263
+P 1000 4550
+F 0 "Q1" H 1191 4596 50  0000 L CNN
+F 1 "BC547" H 1191 4505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1200 4475 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 1000 4550 50  0001 L CNN
+	1    1000 4550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	900  4750 900  4950
+Wire Wire Line
+	1200 4550 1250 4550
+Wire Wire Line
+	1250 4550 1250 4300
+Wire Wire Line
+	1250 4300 900  4300
+Wire Wire Line
+	900  4300 900  4350
+Connection ~ 1250 4550
+Wire Wire Line
+	1250 4550 1850 4550
+Wire Wire Line
+	900  5600 2150 5600
+Wire Wire Line
+	900  4300 900  3150
+Wire Wire Line
+	900  1700 1600 1700
+Connection ~ 900  4300
+Connection ~ 1600 1700
+$Comp
+L Device:R R1
+U 1 1 62A2A3E7
+P 900 3000
+F 0 "R1" V 970 3046 50  0000 L CNN
+F 1 "R" H 970 2955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 830 3000 50  0001 C CNN
+F 3 "~" H 900 3000 50  0001 C CNN
+	1    900  3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  2850 900  1700
+$Comp
+L IRF9520:IRF9520 Q8
+U 1 1 62A2B696
+P 4700 3250
+F 0 "Q8" H 4798 3296 50  0000 L CNN
+F 1 "IRF9520" H 4798 3205 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4700 3250 50  0001 L BNN
+F 3 "" H 4700 3250 50  0001 L BNN
+F 4 "IPC 7351B" H 4700 3250 50  0001 L BNN "STANDARD"
+F 5 "B" H 4700 3250 50  0001 L BNN "PARTREV"
+F 6 "VISHAY" H 4700 3250 50  0001 L BNN "MANUFACTURER"
+	1    4700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 62A2F936
+P 4350 3600
+F 0 "C1" V 4098 3600 50  0000 C CNN
+F 1 "C" V 4189 3600 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4388 3450 50  0001 C CNN
+F 3 "~" H 4350 3600 50  0001 C CNN
+	1    4350 3600
+	0    1    1    0   
+$EndComp
+Connection ~ 2700 3150
+Wire Wire Line
+	2700 3150 2700 3500
+Wire Wire Line
+	2700 3150 3250 3150
+Wire Wire Line
+	4200 3600 4000 3600
+Wire Wire Line
+	4000 3600 4000 3150
+Connection ~ 4000 3150
+$Comp
+L Device:R R11
+U 1 1 62A333B5
+P 4700 3850
+F 0 "R11" H 4630 3804 50  0000 R CNN
+F 1 "R" H 4630 3895 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4630 3850 50  0001 C CNN
+F 3 "~" H 4700 3850 50  0001 C CNN
+	1    4700 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4700 3600 4700 3700
+Connection ~ 4700 3600
+Wire Wire Line
+	4700 3050 4700 1700
+Wire Wire Line
+	4700 1700 4200 1700
+Connection ~ 2700 1700
+Text GLabel 4700 4350 3    50   Output ~ 0
+VA
+$Comp
+L Device:R R8
+U 1 1 62A368B2
+P 3300 4400
+F 0 "R8" H 3370 4446 50  0000 L CNN
+F 1 "R" H 3370 4355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3230 4400 50  0001 C CNN
+F 3 "~" H 3300 4400 50  0001 C CNN
+	1    3300 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 62A3756D
+P 3300 4800
+F 0 "R9" H 3370 4846 50  0000 L CNN
+F 1 "R" H 3370 4755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3230 4800 50  0001 C CNN
+F 3 "~" H 3300 4800 50  0001 C CNN
+	1    3300 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 62A37995
+P 3300 5300
+F 0 "R10" H 3370 5346 50  0000 L CNN
+F 1 "R" H 3370 5255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3230 5300 50  0001 C CNN
+F 3 "~" H 3300 5300 50  0001 C CNN
+	1    3300 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q7
+U 1 1 62A382B7
+P 4050 5350
+F 0 "Q7" H 4255 5396 50  0000 L CNN
+F 1 "2N7000" H 4255 5305 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4250 5275 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4050 5350 50  0001 L CNN
+	1    4050 5350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5150 3950 5050
+Wire Wire Line
+	3950 5050 3300 5050
+Wire Wire Line
+	3950 5550 3950 5600
+Wire Wire Line
+	3950 5600 3300 5600
+Wire Wire Line
+	3300 5600 3300 5450
+Wire Wire Line
+	3300 4650 3300 4600
+Wire Wire Line
+	4700 4000 4700 4150
+Wire Wire Line
+	3300 5050 3300 5150
+Wire Wire Line
+	3300 4950 3300 5050
+Connection ~ 3300 5050
+Wire Wire Line
+	3300 4150 4700 4150
+Wire Wire Line
+	3300 4150 3300 4250
+Connection ~ 4700 4150
+Wire Wire Line
+	3300 4600 3000 4600
+Connection ~ 3300 4600
+Wire Wire Line
+	3300 4600 3300 4550
+Text GLabel 3000 4600 0    50   BiDi ~ 0
+Vf
+Connection ~ 2150 5600
+Connection ~ 3300 5600
+Wire Wire Line
+	2150 4750 2150 4950
+Wire Wire Line
+	3300 5600 2150 5600
+Text GLabel 1150 3700 0    50   BiDi ~ 0
+Vf
+Text GLabel 3000 3700 2    50   BiDi ~ 0
+Vref
+Text GLabel 4250 5350 2    50   Input ~ 0
+SELA
+Text GLabel 2700 1700 1    50   Input ~ 0
+VREG
+$Comp
+L Device:R R13
+U 1 1 62A8A854
+P 5250 3600
+F 0 "R13" H 5180 3554 50  0000 R CNN
+F 1 "R" H 5180 3645 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5180 3600 50  0001 C CNN
+F 3 "~" H 5250 3600 50  0001 C CNN
+	1    5250 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 62A8B036
+P 5300 4000
+F 0 "R14" H 5230 3954 50  0000 R CNN
+F 1 "R" H 5230 4045 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5230 4000 50  0001 C CNN
+F 3 "~" H 5300 4000 50  0001 C CNN
+	1    5300 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4500 3600 4700 3600
+Wire Wire Line
+	5400 3600 5550 3600
+Wire Wire Line
+	5700 3600 5700 3650
+Wire Wire Line
+	5300 3850 5550 3850
+Wire Wire Line
+	4700 4150 4700 4350
+$Comp
+L Device:R R17
+U 1 1 62A9D23E
+P 5950 4150
+F 0 "R17" H 5880 4104 50  0000 R CNN
+F 1 "R" H 5880 4195 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5880 4150 50  0001 C CNN
+F 3 "~" H 5950 4150 50  0001 C CNN
+	1    5950 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 4150 5550 4150
+Wire Wire Line
+	5550 4150 5550 3850
+Connection ~ 5550 3850
+Wire Wire Line
+	5550 3850 5700 3850
+Wire Wire Line
+	6100 4150 6750 4150
+Wire Wire Line
+	6750 4150 6750 3750
+Wire Wire Line
+	6750 3750 6300 3750
+$Comp
+L Device:R R16
+U 1 1 62AA02B5
+P 5550 3350
+F 0 "R16" H 5480 3304 50  0000 R CNN
+F 1 "R" H 5480 3395 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5480 3350 50  0001 C CNN
+F 3 "~" H 5550 3350 50  0001 C CNN
+	1    5550 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3500 5550 3600
+Connection ~ 5550 3600
+Wire Wire Line
+	5550 3600 5700 3600
+$Comp
+L power:GND #PWR0101
+U 1 1 62AA24A9
+P 2150 5800
+F 0 "#PWR0101" H 2150 5550 50  0001 C CNN
+F 1 "GND" H 2155 5627 50  0000 C CNN
+F 2 "" H 2150 5800 50  0001 C CNN
+F 3 "" H 2150 5800 50  0001 C CNN
+	1    2150 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 5800 2150 5600
+$Comp
+L power:GND #PWR0102
+U 1 1 62AA3FE0
+P 5800 3200
+F 0 "#PWR0102" H 5800 2950 50  0001 C CNN
+F 1 "GND" H 5805 3027 50  0000 C CNN
+F 2 "" H 5800 3200 50  0001 C CNN
+F 3 "" H 5800 3200 50  0001 C CNN
+	1    5800 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3200 5550 3050
+Wire Wire Line
+	5550 3050 5800 3050
+Wire Wire Line
+	5800 3050 5800 3200
+Text Label 6300 3750 0    50   ~ 0
+Vsens
+$Comp
+L Device:R R19
+U 1 1 62AB0BD1
+P 7050 1300
+F 0 "R19" H 6980 1254 50  0000 R CNN
+F 1 "R" H 6980 1345 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6980 1300 50  0001 C CNN
+F 3 "~" H 7050 1300 50  0001 C CNN
+	1    7050 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 62AB114E
+P 7050 1700
+F 0 "R20" H 6980 1654 50  0000 R CNN
+F 1 "R" H 6980 1745 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6980 1700 50  0001 C CNN
+F 3 "~" H 7050 1700 50  0001 C CNN
+	1    7050 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 62AB1353
+P 6550 1550
+F 0 "R15" H 6480 1504 50  0000 R CNN
+F 1 "R" H 6480 1595 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6480 1550 50  0001 C CNN
+F 3 "~" H 6550 1550 50  0001 C CNN
+	1    6550 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 62AB183F
+P 6300 1300
+F 0 "R12" H 6230 1254 50  0000 R CNN
+F 1 "R" H 6230 1345 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6230 1300 50  0001 C CNN
+F 3 "~" H 6300 1300 50  0001 C CNN
+	1    6300 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 62AB1B92
+P 7050 600
+F 0 "R18" H 6980 554 50  0000 R CNN
+F 1 "R" H 6980 645 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6980 600 50  0001 C CNN
+F 3 "~" H 7050 600 50  0001 C CNN
+	1    7050 600 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 62AB2114
+P 7900 600
+F 0 "R21" H 7830 554 50  0000 R CNN
+F 1 "R" H 7830 645 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7830 600 50  0001 C CNN
+F 3 "~" H 7900 600 50  0001 C CNN
+	1    7900 600 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8100 1200 8250 1200
+Wire Wire Line
+	8250 1200 8250 600 
+Wire Wire Line
+	8250 600  8050 600 
+Wire Wire Line
+	7750 600  7400 600 
+$Comp
+L power:GND #PWR0103
+U 1 1 62AB4A5C
+P 6700 700
+F 0 "#PWR0103" H 6700 450 50  0001 C CNN
+F 1 "GND" H 6705 527 50  0000 C CNN
+F 2 "" H 6700 700 50  0001 C CNN
+F 3 "" H 6700 700 50  0001 C CNN
+	1    6700 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 700  6700 600 
+Wire Wire Line
+	6700 600  6900 600 
+Wire Wire Line
+	7400 600  7400 1100
+Wire Wire Line
+	7400 1100 7500 1100
+Connection ~ 7400 600 
+Wire Wire Line
+	7400 600  7200 600 
+Wire Wire Line
+	7500 1300 7400 1300
+Wire Wire Line
+	6900 1300 6550 1300
+Wire Wire Line
+	6550 1300 6550 1400
+Connection ~ 6550 1300
+Wire Wire Line
+	6550 1300 6450 1300
+Wire Wire Line
+	7200 1700 7400 1700
+Wire Wire Line
+	7400 1700 7400 1300
+Connection ~ 7400 1300
+Wire Wire Line
+	7400 1300 7200 1300
+Wire Wire Line
+	6750 1700 6900 1700
+Text Label 6750 1700 0    50   ~ 0
+Vf
+Text Label 3100 4600 0    50   ~ 0
+Vf
+Text Label 1200 3700 0    50   ~ 0
+Vf
+Wire Wire Line
+	1150 3700 1300 3700
+Wire Wire Line
+	8250 1200 8450 1200
+Connection ~ 8250 1200
+Text Label 8450 1200 0    50   ~ 0
+Vref2
+$Comp
+L power:GND #PWR0104
+U 1 1 62ACBE1C
+P 6550 1800
+F 0 "#PWR0104" H 6550 1550 50  0001 C CNN
+F 1 "GND" H 6555 1627 50  0000 C CNN
+F 2 "" H 6550 1800 50  0001 C CNN
+F 3 "" H 6550 1800 50  0001 C CNN
+	1    6550 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 1700 6550 1800
+Wire Wire Line
+	6150 1300 5900 1300
+Text Label 5900 1300 0    50   ~ 0
+Vref
+$Comp
+L Device:R R22
+U 1 1 62AE6EC7
+P 8650 3250
+F 0 "R22" H 8580 3204 50  0000 R CNN
+F 1 "R" H 8580 3295 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8580 3250 50  0001 C CNN
+F 3 "~" H 8650 3250 50  0001 C CNN
+	1    8650 3250
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 62AE7251
+P 8650 3450
+F 0 "R23" H 8580 3404 50  0000 R CNN
+F 1 "R" H 8580 3495 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8580 3450 50  0001 C CNN
+F 3 "~" H 8650 3450 50  0001 C CNN
+	1    8650 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8800 3250 8950 3250
+Wire Wire Line
+	9050 3450 8950 3450
+$Comp
+L Device:R R26
+U 1 1 62AF1FC6
+P 9300 2800
+F 0 "R26" H 9230 2754 50  0000 R CNN
+F 1 "R" H 9230 2845 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9230 2800 50  0001 C CNN
+F 3 "~" H 9300 2800 50  0001 C CNN
+	1    9300 2800
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R25
+U 1 1 62AF22D9
+P 9300 2350
+F 0 "R25" H 9230 2304 50  0000 R CNN
+F 1 "R" H 9230 2395 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9230 2350 50  0001 C CNN
+F 3 "~" H 9300 2350 50  0001 C CNN
+	1    9300 2350
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 62AF2565
+P 9650 2550
+F 0 "C2" V 9398 2550 50  0000 C CNN
+F 1 "C" V 9489 2550 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 9688 2400 50  0001 C CNN
+F 3 "~" H 9650 2550 50  0001 C CNN
+	1    9650 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9650 2350 9650 2400
+Wire Wire Line
+	9650 2700 9650 2800
+Wire Wire Line
+	9650 2800 9450 2800
+Wire Wire Line
+	9650 2800 9650 3350
+Connection ~ 9650 2800
+Wire Wire Line
+	8950 3250 8950 2800
+Connection ~ 8950 3250
+Wire Wire Line
+	8950 3250 9050 3250
+Wire Wire Line
+	8950 2350 8950 2800
+Wire Wire Line
+	9450 2350 9650 2350
+Wire Wire Line
+	8950 2350 9150 2350
+Wire Wire Line
+	9150 2800 8950 2800
+Connection ~ 8950 2800
+Wire Wire Line
+	8500 3250 8300 3250
+Wire Wire Line
+	8300 3450 8500 3450
+Text Label 8300 3250 0    50   ~ 0
+Vsens
+Text Label 8300 3450 0    50   ~ 0
+Vref2
+$Comp
+L Device:R R24
+U 1 1 62B26158
+P 8950 3750
+F 0 "R24" H 8880 3704 50  0000 R CNN
+F 1 "R" H 8880 3795 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8880 3750 50  0001 C CNN
+F 3 "~" H 8950 3750 50  0001 C CNN
+	1    8950 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3450 8950 3600
+Connection ~ 8950 3450
+Wire Wire Line
+	8950 3450 8800 3450
+Wire Wire Line
+	8950 3900 8950 4100
+$Comp
+L power:GND #PWR0105
+U 1 1 62B2C443
+P 8950 4100
+F 0 "#PWR0105" H 8950 3850 50  0001 C CNN
+F 1 "GND" H 8955 3927 50  0000 C CNN
+F 2 "" H 8950 4100 50  0001 C CNN
+F 3 "" H 8950 4100 50  0001 C CNN
+	1    8950 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 3350 9800 3350
+Text Label 9800 3350 0    50   ~ 0
+Vact
+$Comp
+L Transistor_FET:BS250 Q10
+U 1 1 62B30841
+P 4300 2400
+F 0 "Q10" H 4505 2354 50  0000 L CNN
+F 1 "BS250" H 4505 2445 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4500 2325 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 4300 2400 50  0001 L CNN
+	1    4300 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 2200 4200 1700
+Connection ~ 4200 1700
+Wire Wire Line
+	4200 1700 3250 1700
+$Comp
+L Transistor_FET:BS250 Q9
+U 1 1 62B42AE5
+P 3350 2400
+F 0 "Q9" H 3555 2354 50  0000 L CNN
+F 1 "BS250" H 3555 2445 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3550 2325 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 3350 2400 50  0001 L CNN
+	1    3350 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3250 2600 3250 3150
+Connection ~ 3250 3150
+Wire Wire Line
+	3250 3150 4000 3150
+Wire Wire Line
+	3250 2200 3250 1700
+Connection ~ 3250 1700
+Wire Wire Line
+	3250 1700 2700 1700
+Text Label 2950 1700 0    50   ~ 0
+VREG
+Text GLabel 3550 2400 2    50   Input ~ 0
+ENLDO
+Text Label 4500 2400 0    50   ~ 0
+Vact
+Wire Wire Line
+	4000 3150 4200 3150
+Wire Wire Line
+	4200 2600 4200 3150
+Connection ~ 4200 3150
+Wire Wire Line
+	4200 3150 4500 3150
+Wire Wire Line
+	4700 3600 4700 3450
+Wire Wire Line
+	4700 3600 5100 3600
+Wire Wire Line
+	4700 4150 5300 4150
+Wire Notes Line
+	8100 4600 10100 4600
+Wire Notes Line
+	10100 4600 10100 2050
+Wire Notes Line
+	10100 2050 8100 2050
+Wire Notes Line
+	8100 2050 8100 4600
+Text Notes 8150 2150 0    50   ~ 0
+Amplificador de error
+Wire Notes Line
+	8700 500  8700 2000
+Wire Notes Line
+	8700 2000 5850 2000
+Wire Notes Line
+	5850 2000 5850 500 
+Wire Notes Line
+	5850 500  8700 500 
+Text Notes 8300 1950 0    50   ~ 0
+Sumador
+Text GLabel 1850 5600 3    50   BiDi ~ 0
+GND
+Wire Notes Line
+	6900 2950 6900 4450
+Wire Notes Line
+	6900 4450 4950 4450
+Wire Notes Line
+	4950 4450 4950 2950
+Wire Notes Line
+	4950 2950 6900 2950
+Text Notes 5000 4400 0    50   ~ 0
+Sensado de corriente\n
+Connection ~ 1300 3700
+Wire Wire Line
+	1300 3700 1350 3700
+Text Label 5900 3450 0    50   ~ 0
+VREG
+Text Label 5900 4050 0    50   ~ 0
+V-
+$Comp
+L Amplifier_Operational:TL081 U3
+U 1 1 62A8B621
+P 9350 3350
+F 0 "U3" H 9694 3304 50  0000 L CNN
+F 1 "TL081" H 9694 3395 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 9400 3400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 9500 3500 50  0001 C CNN
+	1    9350 3350
+	1    0    0    1   
+$EndComp
+Connection ~ 9650 3350
+Text Label 9250 3650 0    50   ~ 0
+VREG
+Text Label 9250 3050 0    50   ~ 0
+V-
+$Comp
+L Amplifier_Operational:TL081 U2
+U 1 1 62A94557
+P 7800 1200
+F 0 "U2" H 8144 1154 50  0000 L CNN
+F 1 "TL081" H 8144 1245 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 7850 1250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7950 1350 50  0001 C CNN
+	1    7800 1200
+	1    0    0    1   
+$EndComp
+Text Label 7700 1650 0    50   ~ 0
+VREG
+Wire Wire Line
+	7700 1500 7700 1650
+Wire Wire Line
+	7700 900  7700 800 
+Text Label 7700 800  0    50   ~ 0
+V-
+Wire Notes Line
+	3050 4350 3050 4000
+Wire Notes Line
+	3050 4000 3850 4000
+Wire Notes Line
+	3850 4000 3850 4850
+Wire Notes Line
+	3850 4850 4700 4850
+Wire Notes Line
+	4700 4850 4700 5750
+Wire Notes Line
+	4700 5750 2650 5750
+Wire Notes Line
+	2650 5750 2650 4350
+Wire Notes Line
+	2600 4350 3050 4350
+Text Notes 2700 5700 0    50   ~ 0
+Realimentador\n
+$Comp
+L Amplifier_Operational:TL081 U1
+U 1 1 62A878D4
+P 6000 3750
+F 0 "U1" H 6344 3796 50  0000 L CNN
+F 1 "TL081" H 6344 3705 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6050 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 6150 3900 50  0001 C CNN
+	1    6000 3750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
